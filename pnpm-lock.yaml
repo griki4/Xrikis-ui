@@ -1,0 +1,12 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers: {}
+
+  packages/b:
+    specifiers:
+      '@Xrikis-ui/a': workspace:^1.0.0
+    dependencies:
+      '@Xrikis-ui/a': link:../a
