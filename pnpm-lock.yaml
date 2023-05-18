@@ -20,8 +20,11 @@ importers:
 
   play:
     specifiers:
+      '@Xrikis-ui/components': workspace:^1.0.0
       '@vitejs/plugin-vue': ^4.2.3
       vite: ^4.3.8
+    dependencies:
+      '@Xrikis-ui/components': link:../packages/components
     devDependencies:
       '@vitejs/plugin-vue': 4.2.3_vite@4.3.8
       vite: 4.3.8
