@@ -1,6 +1,6 @@
 <template>
   <div>
-    <rz-button />
+    <rz-button type="primary"/>
   </div>
 </template>
 
