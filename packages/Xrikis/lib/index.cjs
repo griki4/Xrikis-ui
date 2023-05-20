@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("./src/index.cjs"),o=require("./src/button/index.cjs"),i=require("./src/icon/index.cjs"),u={install:t=>{for(let n in e)t.use(e[n])}};exports.Button=o.Button;exports.Icon=i.Icon;exports.default=u;
