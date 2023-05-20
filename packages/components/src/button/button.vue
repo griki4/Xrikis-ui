@@ -6,18 +6,23 @@ defineOptions({name: "rz-button"})
 
 //定义组件接收的参数类型
 type ButtonProps = {
-  type?: string
+  type?: "primary" | "warning",
+  content?: string
 }
 //获取组件参数
-const buttonProps = defineProps<ButtonProps>()
+const buttonProps = withDefaults(defineProps<ButtonProps>(), {
+  type: "primary",
+  content: "主要按钮"
+})
 //根据参数动态计算出组件的样式
 const buttonStyle = computed(() => {
   return {[`ea-button--${buttonProps.type}`]: buttonProps.type}
 })
+
 </script>
 
 <template>
-  <button class="ea-button" :class="buttonStyle">主要按钮</button>
+  <button class="ea-button" :class="buttonStyle">{{ content }}</button>
 </template>
 
 <style scoped>

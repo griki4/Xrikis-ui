@@ -1,4 +1,4 @@
-import { createApp } from "vue"
+import {createApp} from "vue"
 import App from "./app.vue"
 import rzex from "@Xrikis-ui/components"
 
