@@ -6,7 +6,8 @@ defineOptions({name: "rz-button"})
 
 //定义组件接收的参数类型
 type ButtonProps = {
-  type?: "primary" | "warning",
+  type?: 'primary' | 'link'
+  size?: 'large' | 'middle' | 'small',
   content?: string
 }
 //获取组件参数
