@@ -1,5 +1,5 @@
-import _Button from './button.vue'
-import type { App, Plugin } from 'vue'
+import _Button from "./button.vue"
+import type { App, Plugin } from "vue"
 //定义交叉类型
 type SFCWithInstall<T> = T & Plugin
 //给组件添加Install方法的函数

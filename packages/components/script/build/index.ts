@@ -1,9 +1,9 @@
-import { series, parallel, dest, src } from 'gulp'
-import less from 'gulp-less'
-import autoprefixer from 'gulp-autoprefixer'
-import run from '../utils/run'
-import { pkgPath, componentPath } from '../utils/paths'
-import delPath from '../utils/delpath'
+import { series, parallel, dest, src } from "gulp"
+import less from "gulp-less"
+import autoprefixer from "gulp-autoprefixer"
+import run from "../utils/run"
+import { pkgPath, componentPath } from "../utils/paths"
+import delPath from "../utils/delpath"
 
 //删除打包文件
 export const removeDist = () => {
@@ -20,7 +20,7 @@ export const buildStyle = () => {
 
 //打包组件
 export const buildComponent = async () => {
-  run('pnpm run build', componentPath)
+  run("pnpm run build", componentPath)
 }
 
 //先删除打包文件，然后并行执行样式和组件的打包

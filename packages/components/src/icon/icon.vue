@@ -3,10 +3,10 @@
 </template>
 
 <script lang="ts" setup>
-import './style/index.less'
-import { defineOptions } from 'unplugin-vue-define-options/macros'
+import "./style/index.less"
+import { defineOptions } from "unplugin-vue-define-options/macros"
 
 defineOptions({
-  name: 'rz-icon'
+  name: "rz-icon"
 })
 </script>
