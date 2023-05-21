@@ -1,3 +1,3 @@
-import sayName from "@Xrikis-ui/a"
+import sayName from '@Xrikis-ui/a'
 
 sayName()
