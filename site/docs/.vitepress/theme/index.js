@@ -1,5 +1,5 @@
 import DefaultTheme from "vitepress/theme"
-import rzex from "@Xrikis-ui/components"
+import rzex from "xrikis"
 
 export default {
     ...DefaultTheme,

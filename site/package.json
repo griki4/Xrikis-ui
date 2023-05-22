@@ -16,6 +16,7 @@
     "vue": "^3.2.36"
   },
   "dependencies": {
-    "@Xrikis-ui/components": "workspace:^1.0.0"
+    "@Xrikis-ui/components": "workspace:^1.0.0",
+    "xrikis": "workspace:^1.0.3"
   }
 }

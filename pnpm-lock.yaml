@@ -134,8 +134,10 @@ importers:
       '@Xrikis-ui/components': workspace:^1.0.0
       vitepress: 1.0.0-alpha.76
       vue: ^3.2.36
+      xrikis: workspace:^1.0.3
     dependencies:
       '@Xrikis-ui/components': link:../packages/components
+      xrikis: link:../packages/Xrikis
     devDependencies:
       vitepress: 1.0.0-alpha.76
       vue: 3.2.36

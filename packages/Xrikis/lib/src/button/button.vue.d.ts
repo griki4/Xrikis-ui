@@ -4,18 +4,42 @@ declare const _sfc_main: import("vue").DefineComponent<{
         required: false;
         default: string;
     };
-    content: {
+    size: {
         type: StringConstructor;
         required: false;
         default: string;
     };
+    onClick: {
+        type: FunctionConstructor;
+        required: false;
+        default: () => void;
+    };
+    danger: {
+        type: BooleanConstructor;
+        required: false;
+        default: boolean;
+    };
+    loading: {
+        type: BooleanConstructor;
+        required: false;
+        default: boolean;
+    };
+    square: {
+        type: BooleanConstructor;
+        required: false;
+        default: boolean;
+    };
 }, {
     buttonProps: {
-        type: "primary" | "warning";
-        content: string;
+        type: "default" | "primary" | "info" | "warning";
+        size: "large" | "middle" | "small";
+        onClick: () => void;
+        danger: boolean;
+        loading: boolean;
+        square: boolean;
     };
     buttonStyle: import("vue").ComputedRef<{
-        [x: string]: "primary" | "warning";
+        [x: string]: "default" | "primary" | "info" | "warning";
     }>;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     type: {
@@ -23,13 +47,37 @@ declare const _sfc_main: import("vue").DefineComponent<{
         required: false;
         default: string;
     };
-    content: {
+    size: {
         type: StringConstructor;
         required: false;
         default: string;
     };
+    onClick: {
+        type: FunctionConstructor;
+        required: false;
+        default: () => void;
+    };
+    danger: {
+        type: BooleanConstructor;
+        required: false;
+        default: boolean;
+    };
+    loading: {
+        type: BooleanConstructor;
+        required: false;
+        default: boolean;
+    };
+    square: {
+        type: BooleanConstructor;
+        required: false;
+        default: boolean;
+    };
 }>>, {
     type: string;
-    content: string;
+    size: string;
+    onClick: Function;
+    danger: boolean;
+    loading: boolean;
+    square: boolean;
 }>;
 export default _sfc_main;
