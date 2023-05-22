@@ -6,14 +6,27 @@ defineOptions({ name: "rz-button" })
 
 //定义组件接收的参数类型
 type ButtonProps = {
-  type?: "primary" | "link"
+  //按钮类型
+  type?: "default" | "primary" | "info" | "warning"
+  //按钮大小
   size?: "large" | "middle" | "small"
-  content?: string
+  //点击事件
+  onClick?: () => void
+  //是否为危险按钮
+  danger?: boolean
+  //是否加载中
+  loading?: boolean
+  //是否使用方形边框
+  square?: boolean
 }
 //获取组件参数
 const buttonProps = withDefaults(defineProps<ButtonProps>(), {
-  type: "primary",
-  content: "主要按钮"
+  type: "default",
+  size: "middle",
+  onClick: () => console.log("click!"),
+  danger: false,
+  loading: false,
+  square: false
 })
 //根据参数动态计算出组件的样式
 const buttonStyle = computed(() => {
@@ -22,9 +35,11 @@ const buttonStyle = computed(() => {
 </script>
 
 <template>
-  <button class="ea-button" :class="buttonStyle">
-    <slot />
+  <button
+    class="ea-button"
+    :class="[buttonStyle, size, { danger: danger }, { square: square }]"
+    @click="onClick"
+  >
+    <slot> Button </slot>
   </button>
 </template>
-
-<style scoped></style>

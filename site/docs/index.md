@@ -13,7 +13,7 @@ hero:
     alt: Xrikis
   actions:
   - text: 开始
-    link: /guide/installation
+    link: /guild/installation
     theme: brand
   - text: 在Github上查看
     link: https://github.com/griki4/Xrikis-ui

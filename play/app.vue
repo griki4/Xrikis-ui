@@ -1,6 +1,12 @@
 <template>
   <div>
-    <Button type="primary" content="主要按钮"></Button>
+    <rz-button type="default" square="true">default</rz-button>
+    &nbsp;
+    <rz-button type="primary" square="true">primary</rz-button>
+    &nbsp;
+    <rz-button type="info" square="true">info</rz-button>
+    &nbsp;
+    <rz-button type="warning" square="true">warning</rz-button>
   </div>
 </template>
 

@@ -17,12 +17,58 @@
   font-size: 14px;
   border-radius: 4px;
 }
+//定义组件大小的通用规则
+.ea-button-size {
+  &.small {
+    padding: 6px 10px;
+  }
+  &.large {
+    padding: 16px 24px;
+  }
+}
+//warning状态下的hover
+.hover {
+  background-color: #f87171;
+  color: #fff;
+}
+
+.ea-button.ea-button--default {
+  color: black;
+  background-color: #ffffff;
+  border-color: black;
+  .ea-button-size;
+  &.square {
+    border-radius: 0;
+  }
+  &.danger {
+    color: red;
+    border-color: red;
+    &:hover {
+      color: #f87171;
+      border-color: #f87171;
+    }
+  }
+  &:hover {
+    border-color: #409eff;
+    color: #409eff;
+  }
+}
 
 .ea-button.ea-button--primary {
   color: #fff;
   background-color: #409eff;
   border-color: #409eff;
-
+  .ea-button-size;
+  &.square {
+    border-radius: 0;
+  }
+  &.danger {
+    background-color: red;
+    border-color: red;
+    &:hover {
+      .hover
+    }
+  }
   &:hover {
     background: #66b1ff;
     border-color: #66b1ff;
@@ -30,14 +76,48 @@
   }
 }
 
-.ea-button.ea-button--warning {
+.ea-button.ea-button--info {
   color: #fff;
-  background-color: red;
-  border-color: red;
-
+  background-color: #27C261;
+  border: #27C261;
+  .ea-button-size;
+  &.square {
+    border-radius: 0;
+  }
+  &.danger {
+    background-color: red;
+    border-color: red;
+    &:hover {
+      .hover
+    }
+  }
   &:hover {
-    background: skyblue;
-    border-color: skyblue;
+    background-color: #41B883;
+    border-color: #41B883;
     color: #fff;
   }
 }
+
+.ea-button.ea-button--warning {
+  color: #fff;
+  background-color: #f9996c;
+  border-color: #f9996c;
+  .ea-button-size;
+  &.square {
+    border-radius: 0;
+  }
+  &.danger {
+    background-color: red;
+    border-color: red;
+    &:hover {
+      .hover
+    }
+  }
+  &:hover {
+    background-color: #F8A648;
+    border-color: #F8A648;
+    color: #fff;
+  }
+}
+
+
