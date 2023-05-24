@@ -10,13 +10,13 @@
 
 ```vue
 <template>
-  <Button type="default">默认按钮</Button>
+  <Button>默认按钮</Button>
   <Button type="primary">主要按钮</Button>
   <Button type="info">信息按钮</Button>
   <Button type="warning">警告按钮</Button>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { Button } from "xrikis"
 </script>
 ```
@@ -39,7 +39,7 @@ import { Button } from "xrikis"
   <Button type="primary" size="small">Button</Button>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { Button } from "xrikis"
 </script>
 ```
@@ -61,7 +61,7 @@ import { Button } from "xrikis"
   <Button type="primary" square="true">Button</Button>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { Button } from "xrikis"
 </script>
 ```
@@ -80,12 +80,12 @@ danger参数可以指定按钮为危险按钮。此时按钮所有位置都会�
 
 ```vue
 <template>
-  <Button danger="true"></Button>&nbsp;&nbsp;&nbsp;&nbsp;
-  <Button type="primary" danger="true"></Button>&nbsp;&nbsp;&nbsp;&nbsp;
-  <Button type="primary" square="true" danger="true"></Button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <Button danger="true"></Button>
+  <Button type="primary" danger="true"></Button>
+  <Button type="primary" square="true" danger="true"></Button>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { Button } from "xrikis"
 </script>
 ```

@@ -20,7 +20,7 @@ type ButtonProps = {
   square?: boolean
 }
 //获取组件参数
-const buttonProps = withDefaults(defineProps<ButtonProps>(), {
+export const buttonProps = withDefaults(defineProps<ButtonProps>(), {
   type: "default",
   size: "middle",
   onClick: () => console.log("click!"),

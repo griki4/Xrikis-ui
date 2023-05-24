@@ -10,11 +10,6 @@ npm i pnpm -g
 pnpm install xrikis
 ```
 
-- 安装依赖
-```shell
-cd xrikis
-pnpm i
-```
 
 # 在Vue项目中使用组件库
 
@@ -24,7 +19,7 @@ pnpm i
 ```ts
 import { createApp } from "vue"
 import App from "./app.vue"
-import rzex from "@Xrikis-ui/components"
+import rzex from "xrikis"
 
 const app = createApp(App)
 app.use(rzex)
@@ -56,7 +51,7 @@ app.mount("#app")
 </template>
 
 <script setup lang="ts">
-import {Button} from "@Xrikis-ui/components"
+import { Button } from "xrikis"
 </script>
 ```
     
