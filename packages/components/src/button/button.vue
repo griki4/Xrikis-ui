@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import { computed } from "vue"
 import "./style/index.less"
 //注意：Vue3.3已经原生支持defineOptions定义组件选项

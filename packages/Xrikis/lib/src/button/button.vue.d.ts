@@ -1,11 +1,11 @@
-export interface ButtonProps {
+export declare type ButtonProps = {
     type?: "default" | "primary" | "info" | "warning";
     size?: "large" | "middle" | "small";
     onClick?: () => void;
     danger?: boolean;
     loading?: boolean;
     square?: boolean;
-}
+};
 declare const _sfc_main: import("vue").DefineComponent<{
     type: {
         type: StringConstructor;

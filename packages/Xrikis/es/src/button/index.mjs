@@ -1,9 +1,7 @@
-import a from "./button.vue.mjs";
-const s = (n) => (n.install = (t) => {
-  const e = n.name;
-  t.component(e, n);
-}, n), l = s(a);
+import t from "./button.vue.mjs";
+import { defineInstall as o } from "@Xrikis/utils";
+const n = o(t);
 export {
-  l as Button,
-  l as default
+  n as Button,
+  n as default
 };

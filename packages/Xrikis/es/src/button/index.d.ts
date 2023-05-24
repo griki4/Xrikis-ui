@@ -1,6 +1,4 @@
-import type { Plugin } from "vue";
-declare type SFCWithInstall<T> = T & Plugin;
-export declare const Button: SFCWithInstall<import("vue").DefineComponent<{
+export declare const Button: import("@Xrikis/utils/dist/lib/defineInstall").SFCWithInstall<import("vue").DefineComponent<{
     type: {
         type: StringConstructor;
         required: false;

@@ -1,6 +1,6 @@
 import { Button as t } from "./button/index.mjs";
-import { Icon as f } from "./icon/index.mjs";
+import { NavBar as e } from "./navbar/index.mjs";
 export {
   t as Button,
-  f as Icon
+  e as NavBar
 };
