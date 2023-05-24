@@ -38,6 +38,10 @@ export default {
                         {
                             text: "Button",
                             link: "/components/button/index",
+                        },
+                        {
+                            text: "NavBar",
+                            link: "/components/navbar/index"
                         }
                     ],
                 }

@@ -5,7 +5,7 @@ import "./style/index.less"
 defineOptions({ name: "rz-button" })
 
 //定义组件接收的参数类型
-type ButtonProps = {
+export type ButtonProps = {
   //按钮类型
   type?: "default" | "primary" | "info" | "warning"
   //按钮大小
@@ -20,7 +20,7 @@ type ButtonProps = {
   square?: boolean
 }
 //获取组件参数
-export const buttonProps = withDefaults(defineProps<ButtonProps>(), {
+const buttonProps = withDefaults(defineProps<ButtonProps>(), {
   type: "default",
   size: "middle",
   onClick: () => console.log("click!"),

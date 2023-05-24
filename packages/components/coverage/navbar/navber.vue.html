@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for button.vue</title>
+    <title>Code coverage report for navbar/navber.vue</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="prettify.css" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> button.vue</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">navbar</a> navber.vue</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>47/47</span>
+                <span class='fraction'>55/55</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>47/47</span>
+                <span class='fraction'>55/55</span>
             </div>
         
             
@@ -110,7 +110,16 @@
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
 <a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -142,7 +151,13 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -154,56 +169,68 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;script lang="ts" setup&gt;
-import { computed } from "vue"
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;script setup lang="ts"&gt;
 import "./style/index.less"
-//注意：Vue3.3已经原生支持defineOptions定义组件选项
-defineOptions({ name: "rz-button" })
 &nbsp;
-//定义组件接收的参数类型
-type ButtonProps = {
-  //按钮类型
-  type?: "default" | "primary" | "info" | "warning"
-  //按钮大小
-  size?: "large" | "middle" | "small"
-  //点击事件
-  onClick?: () =&gt; void
-  //是否为危险按钮
-  danger?: boolean
-  //是否加载中
-  loading?: boolean
-  //是否使用方形边框
-  square?: boolean
+defineOptions({
+  name: "rz-navbar"
+})
+&nbsp;
+export type NavBarProps = {
+  //中间标题
+  title?: string
+  //左侧文字
+  leftText?: string
+  //右侧文字
+  rightText?: string
+  //是否显示左侧箭头
+  leftArrow?: boolean
+  //点击左侧按钮标题触发的事件
+  clickLeft?: () =&gt; void
+  //点击右侧按钮触发事件
+  clickRight?: () =&gt; void
 }
-//获取组件参数
-const buttonProps = withDefaults(defineProps&lt;ButtonProps&gt;(), {
-  type: "default",
-  size: "middle",
-  onClick: () =&gt; console.log("click!"),
-  danger: false,
-  loading: false,
-  square: false
+&nbsp;
+const navbarProps = withDefaults(defineProps&lt;NavBarProps&gt;(), {
+  title: "中间标题",
+  leftText: "返回",
+  rightText: "按钮",
+  leftArrow: false,
+  clickLeft: () =&gt; console.log("左侧按钮被点击了！"),
+  clickRight: () =&gt; console.log("右侧按钮被点击了！")
 })
-//根据参数动态计算出组件的样式
-const buttonStyle = computed(() =&gt; {
-  return { [`ea-button--${buttonProps.type}`]: buttonProps.type }
-})
+&nbsp;
 &lt;/script&gt;
 &nbsp;
 &lt;template&gt;
-  &lt;button
-      class="ea-button"
-      :class="[buttonStyle, size, {'danger': danger}, {'square': square}]"
-      @click<span class="fstat-no" title="function not covered" >="onClick"</span>
-  &gt;
-    &lt;slot&gt;
-      Button
+&lt;div class="nav-bar"&gt;
+  &lt;div class="left" @click<span class="fstat-no" title="function not covered" >="clickLeft"&gt;</span>
+    &lt;img v-if="leftArrow" src="./assets/back.svg" alt="" class="back"&gt;
+    &lt;slot name="left"&gt;
+      {{leftText}}
     &lt;/slot&gt;
-  &lt;/button&gt;
+  &lt;/div&gt;
+&nbsp;
+  &lt;div class="center"&gt;
+    &lt;slot name="center"&gt;
+      {{title}}
+    &lt;/slot&gt;
+  &lt;/div&gt;
+&nbsp;
+  &lt;div class="right" @click<span class="fstat-no" title="function not covered" >="clickRight"&gt;</span>
+    &lt;slot name="right"&gt;
+      {{rightText}}
+    &lt;/slot&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;/template&gt;
+&nbsp;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -211,16 +238,16 @@ const buttonStyle = computed(() =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-05-22T11:19:49.181Z
+                at 2023-05-24T12:05:20.604Z
             </div>
-        <script src="prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="sorter.js"></script>
-        <script src="block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     

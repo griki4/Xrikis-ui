@@ -92,4 +92,15 @@ import { Button } from "xrikis"
 
 :::
 
+## API
+
+| 属性名     | 描述         | 类型                                   | 默认值       |
+|---------|------------|--------------------------------------|-----------|
+| type    | 按钮类型       | `default` `primary` `info` `warning` | `default` |
+| size    | 按钮尺寸       | `larger` `middle` `samll`            | `middle`  |
+| danger  | 是否危险按钮     | `boolean`                            | `false`   |
+| square  | 是否使用方形边框按钮 | `boolean`                            | `false`   |
+| onClick | 点击按钮触发的事件  | `() => void`                         | --        |
+
+
 

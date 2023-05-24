@@ -114,10 +114,12 @@ importers:
 
   packages/components:
     specifiers:
+      '@Xrikis/utils': workspace:^1.0.0
       '@testing-library/dom': ^9.3.0
       '@testing-library/vue': ^7.0.0
       '@vitest/coverage-c8': ^0.31.1
     dependencies:
+      '@Xrikis/utils': link:../utils
       '@testing-library/dom': 9.3.0
       '@testing-library/vue': 7.0.0
     devDependencies:
@@ -131,8 +133,10 @@ importers:
       '@Xrikis-ui/components': workspace:^1.0.0
       '@vitejs/plugin-vue': ^4.2.3
       vite: ^4.3.8
+      xrikis: workspace:^1.0.3
     dependencies:
       '@Xrikis-ui/components': link:../packages/components
+      xrikis: link:../packages/Xrikis
     devDependencies:
       '@vitejs/plugin-vue': 4.2.3_vite@4.3.8
       vite: 4.3.8
