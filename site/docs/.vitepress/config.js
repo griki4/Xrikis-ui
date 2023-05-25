@@ -1,5 +1,5 @@
 export default {
-    base: process.env.NODE_ENV === 'production' ? '/Xrikis-ui/' : '/',
+    base: process.env.NODE_ENV === 'production' ? '/xrikis/' : '/',
     themeConfig: {
         siteTitle: "Xrikis-ui",
         nav: [
