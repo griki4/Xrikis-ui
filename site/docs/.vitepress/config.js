@@ -1,7 +1,7 @@
 export default {
-    base: process.env.NODE_ENV === 'production' ? '/xrikis/' : '/',
+    base: process.env.NODE_ENV === 'production' ? '/Xrikis-ui/' : '/',
     themeConfig: {
-        siteTitle: "xrikis-ui",
+        siteTitle: "Xrikis-ui",
         nav: [
             {text: "指南", link: "/guild/installation"},
             {text: "组件", link: "/components/button/"},
@@ -42,6 +42,10 @@ export default {
                         {
                             text: "NavBar",
                             link: "/components/navbar/index"
+                        },
+                        {
+                            text: "Icon",
+                            link: "/components/icon/index"
                         }
                     ],
                 }
@@ -50,17 +54,5 @@ export default {
         socialLinks: [
             {icon: "github", link: "https://github.com/griki4/Xrikis-ui"},
         ],
-    },
-    markdown: {
-        extendMarkdown: (md) => {
-            // 修改解析器的配置
-            md.set({ html: true });
-            md.renderer.rules.image = (tokens, idx, options, env, self) => {
-                // 将`<img>`标签渲染为内联元素
-                const token = tokens[idx];
-                token.tag = 'img';
-                return self.renderToken(tokens, idx, options);
-            };
-        },
-    },
+    }
 };

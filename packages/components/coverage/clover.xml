@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1684997060254" clover="3.2.0">
-  <project timestamp="1684997060255" name="All files">
-    <metrics statements="99" coveredstatements="99" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="0" elements="105" coveredelements="102" complexity="0" loc="99" ncloc="99" packages="2" files="2" classes="2"/>
+<coverage generated="1685018292032" clover="3.2.0">
+  <project timestamp="1685018292032" name="All files">
+    <metrics statements="108" coveredstatements="108" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="0" elements="115" coveredelements="112" complexity="0" loc="108" ncloc="108" packages="2" files="2" classes="2"/>
     <package name="button">
-      <metrics statements="45" coveredstatements="45" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="0"/>
+      <metrics statements="49" coveredstatements="49" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="0"/>
       <file name="button.vue" path="D:\web\Project\Xrikis-ui\packages\components\src\button\button.vue">
-        <metrics statements="45" coveredstatements="45" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="0"/>
+        <metrics statements="49" coveredstatements="49" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -37,11 +37,11 @@
         <line num="29" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="33" count="7" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="7" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
         <line num="38" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
@@ -51,12 +51,16 @@
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
       </file>
     </package>
     <package name="navbar">
-      <metrics statements="54" coveredstatements="54" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="0"/>
+      <metrics statements="59" coveredstatements="59" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="0"/>
       <file name="navbar.vue" path="D:\web\Project\Xrikis-ui\packages\components\src\navbar\navbar.vue">
-        <metrics statements="54" coveredstatements="54" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="0"/>
+        <metrics statements="59" coveredstatements="59" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -93,24 +97,29 @@
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
-        <line num="37" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="38" count="4" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
+        <line num="42" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="43" count="4" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
         <line num="47" count="1" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="49" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="50" count="4" type="stmt"/>
+        <line num="48" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
         <line num="51" count="1" type="stmt"/>
         <line num="52" count="1" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
+        <line num="54" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
       </file>
     </package>
   </project>

@@ -29,6 +29,10 @@ export declare const Button: import("@Xrikis/utils/dist/lib/defineInstall").SFCW
         required: false;
         default: boolean;
     };
+    style: {
+        type: null;
+        required: true;
+    };
 }, {
     buttonProps: {
         type: "default" | "primary" | "info" | "warning";
@@ -37,6 +41,7 @@ export declare const Button: import("@Xrikis/utils/dist/lib/defineInstall").SFCW
         danger: boolean;
         loading: boolean;
         square: boolean;
+        style: import("vue").CSSProperties;
     };
     buttonStyle: import("vue").ComputedRef<{
         [x: string]: "default" | "primary" | "info" | "warning";
@@ -71,6 +76,10 @@ export declare const Button: import("@Xrikis/utils/dist/lib/defineInstall").SFCW
         type: BooleanConstructor;
         required: false;
         default: boolean;
+    };
+    style: {
+        type: null;
+        required: true;
     };
 }>>, {
     type: string;

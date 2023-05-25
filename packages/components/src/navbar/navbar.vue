@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { CSSProperties } from "vue"
 import "./style/index.less"
 
 defineOptions({
@@ -18,6 +19,10 @@ export type NavBarProps = {
   clickRight?: () => void
   //是否显示左侧箭头
   leftArrow: boolean
+  //组件自定义样式
+  leftStyle: CSSProperties
+  centerStyle: CSSProperties
+  rightStyle: CSSProperties
 }
 
 const navbarProps = withDefaults(defineProps<NavBarProps>(), {
@@ -32,20 +37,20 @@ const navbarProps = withDefaults(defineProps<NavBarProps>(), {
 
 <template>
   <div class="nav-bar">
-    <div class="left" @click="clickLeft">
+    <div class="left" @click="clickLeft" :style="leftStyle">
       <img src="./assets/back.svg" v-if="leftArrow" alt="" class="back" />
       <slot name="left">
         {{ leftText }}
       </slot>
     </div>
 
-    <div class="center">
+    <div class="center" :style="centerStyle">
       <slot name="center">
         {{ title }}
       </slot>
     </div>
 
-    <div class="right" @click="clickRight">
+    <div class="right" @click="clickRight" :style="rightStyle">
       <slot name="right">
         {{ rightText }}
       </slot>

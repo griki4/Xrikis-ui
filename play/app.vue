@@ -1,13 +1,20 @@
 <template>
-  <Button square="true"></Button>
-  <rz-navbar></rz-navbar>
-  <NavBar></NavBar>
+  <Button :square="true" :style="{ width: '100px' }"></Button>
+  <rz-button :style="{ width: '100px' }"></rz-button>
+  <NavBar :left-arrow="true" :left-style="{ fontSize: '30px' }"></NavBar>
+  <Icon
+    type="juejin"
+    :style="{ width: '25px', height: '25px', fill: 'blue' }"
+    href="https://github.com/"
+    :onClick="handleClick"
+  ></Icon>
+  <Icon type="github"></Icon>
 </template>
 
 <script setup lang="ts">
-import { Button, NavBar } from "xrikis"
+import { Button, NavBar, Icon } from "xrikis"
 
 function handleClick() {
-  console.log("我被点击了")
+  alert("确定要离开吗？")
 }
 </script>

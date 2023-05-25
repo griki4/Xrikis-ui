@@ -1,3 +1,4 @@
+import type { CSSProperties } from "vue";
 export declare type ButtonProps = {
     type?: "default" | "primary" | "info" | "warning";
     size?: "large" | "middle" | "small";
@@ -5,6 +6,7 @@ export declare type ButtonProps = {
     danger?: boolean;
     loading?: boolean;
     square?: boolean;
+    style: CSSProperties;
 };
 declare const _sfc_main: import("vue").DefineComponent<{
     type: {
@@ -37,6 +39,10 @@ declare const _sfc_main: import("vue").DefineComponent<{
         required: false;
         default: boolean;
     };
+    style: {
+        type: null;
+        required: true;
+    };
 }, {
     buttonProps: {
         type: "default" | "primary" | "info" | "warning";
@@ -45,6 +51,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
         danger: boolean;
         loading: boolean;
         square: boolean;
+        style: CSSProperties;
     };
     buttonStyle: import("vue").ComputedRef<{
         [x: string]: "default" | "primary" | "info" | "warning";
@@ -79,6 +86,10 @@ declare const _sfc_main: import("vue").DefineComponent<{
         type: BooleanConstructor;
         required: false;
         default: boolean;
+    };
+    style: {
+        type: null;
+        required: true;
     };
 }>>, {
     type: string;

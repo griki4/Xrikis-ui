@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue"
+import type { CSSProperties } from "vue"
 import "./style/index.less"
 //注意：Vue3.3已经原生支持defineOptions定义组件选项
 defineOptions({ name: "rz-button" })
@@ -18,6 +19,8 @@ export type ButtonProps = {
   loading?: boolean
   //是否使用方形边框
   square?: boolean
+  //组件自定义样式
+  style: CSSProperties
 }
 //获取组件参数
 const buttonProps = withDefaults(defineProps<ButtonProps>(), {
@@ -38,6 +41,7 @@ const buttonStyle = computed(() => {
   <button
     class="ea-button"
     :class="[buttonStyle, size, { danger: danger }, { square: square }]"
+    :style="style"
     @click="onClick"
   >
     <slot> Button </slot>

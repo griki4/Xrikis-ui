@@ -99,14 +99,18 @@ import { NavBar } from "xrikis"
 
 ## API
 
-|     属性名     |     描述     |      类型      |  默认值 |
-|:-----------:|:----------:|:------------:|:--:|
-|    title    |   导航栏标题    |   `string`   | 中间标题 |
-|  left-text  |  导航栏左侧标题   |   `string`   |  返回 |
-| right-text  |  导航栏右侧标题   |   `string`   |  按钮 |
-| click-left  | 点击左侧标题触发事件 | `() => void` |   - |
-| click-right | 点击右侧标题触发事件 | `() => void` |   - |
-| left-arrow  |  左侧箭头是否显示  |  `boolean`   | `true` |
+|     属性名     |     描述     |       类型        |  默认值   |
+|:-----------:|:----------:|:---------------:|:------:|
+|    title    |   导航栏标题    |    `string`     |  中间标题  |
+|  left-text  |  导航栏左侧标题   |    `string`     |   返回   |
+| right-text  |  导航栏右侧标题   |    `string`     |   按钮   |
+| click-left  | 点击左侧标题触发事件 |  `() => void`   |   -    |
+| click-right | 点击右侧标题触发事件 |  `() => void`   |   -    |
+| left-arrow  |  左侧箭头是否显示  |    `boolean`    | `true` |
+|  leftStyle  |  左侧自定义样式   | `CSSProperties` |   -    |
+| centerStyle |  中间自定义样式   |      `CSSProperties`           |   -    |
+| rightStyle  |  右侧自定义样式   |     `CSSProperties`            |   -    |
+
 
 ## Slot
 
