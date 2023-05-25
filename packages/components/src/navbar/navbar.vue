@@ -16,6 +16,8 @@ export type NavBarProps = {
   clickLeft?: () => void
   //点击右侧按钮触发事件
   clickRight?: () => void
+  //是否显示左侧箭头
+  leftArrow: boolean
 }
 
 const navbarProps = withDefaults(defineProps<NavBarProps>(), {
@@ -23,13 +25,15 @@ const navbarProps = withDefaults(defineProps<NavBarProps>(), {
   leftText: "返回",
   rightText: "按钮",
   clickLeft: () => console.log("左侧按钮被点击了！"),
-  clickRight: () => console.log("右侧按钮被点击了！")
+  clickRight: () => console.log("右侧按钮被点击了！"),
+  leftArrow: true
 })
 </script>
 
 <template>
   <div class="nav-bar">
     <div class="left" @click="clickLeft">
+      <img src="./assets/back.svg" v-if="leftArrow" alt="" class="back" />
       <slot name="left">
         {{ leftText }}
       </slot>

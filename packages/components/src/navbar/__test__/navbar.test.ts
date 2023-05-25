@@ -18,7 +18,7 @@ describe("NavBar", () => {
       props: {
         title: "Custom Title",
         leftText: "Custom Left",
-        rightText: "Custom Right",
+        rightText: "Custom Right"
       }
     })
 

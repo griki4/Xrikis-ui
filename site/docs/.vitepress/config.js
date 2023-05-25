@@ -51,4 +51,16 @@ export default {
             {icon: "github", link: "https://github.com/griki4/Xrikis-ui"},
         ],
     },
+    markdown: {
+        extendMarkdown: (md) => {
+            // 修改解析器的配置
+            md.set({ html: true });
+            md.renderer.rules.image = (tokens, idx, options, env, self) => {
+                // 将`<img>`标签渲染为内联元素
+                const token = tokens[idx];
+                token.tag = 'img';
+                return self.renderToken(tokens, idx, options);
+            };
+        },
+    },
 };
