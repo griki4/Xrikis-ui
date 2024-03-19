@@ -38,19 +38,13 @@ const changeInputVal = (event: Event) => {
   inputEmits("update:modelValue", (event.target as HTMLInputElement).value)
 }
 
-const ipt =ref()
-Promise.resolve().then(() => {
-  if (inputProps.password) {
-    ipt.value.type = "password"
-  }
-});
 </script>
 
 
 <template>
     <div class="k-input" :class="styleClass">
         <input
-            ref="ipt"
+            :type="password ? 'password' : 'text'"
             class="k-input__inner"
             :placeholder="inputProps.placeholder"
             :value="inputProps.modelValue"
