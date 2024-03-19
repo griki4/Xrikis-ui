@@ -42,10 +42,6 @@ export default {
                         {
                             text: "NavBar",
                             link: "/components/navbar/index"
-                        },
-                        {
-                            text: "Icon",
-                            link: "/components/icon/index"
                         }
                     ],
                 }
