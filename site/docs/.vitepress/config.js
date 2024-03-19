@@ -36,12 +36,16 @@ export default {
                     text: "基础组件",
                     items: [
                         {
-                            text: "Button",
+                            text: "Button 按钮",
                             link: "/components/button/index",
                         },
                         {
-                            text: "NavBar",
+                            text: "NavBar 导航栏",
                             link: "/components/navbar/index"
+                        },
+                        {
+                            text: "Input 输入框",
+                            link: "/components/input/index"
                         }
                     ],
                 }

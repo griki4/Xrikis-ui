@@ -44,19 +44,11 @@ declare const _sfc_main: import("vue").DefineComponent<{
         required: true;
     };
 }, {
-    buttonProps: {
-        type: "default" | "primary" | "info" | "warning";
-        size: "large" | "middle" | "small";
-        onClick: () => void;
-        danger: boolean;
-        loading: boolean;
-        square: boolean;
-        style: CSSProperties;
-    };
+    buttonProps: any;
     buttonStyle: import("vue").ComputedRef<{
-        [x: string]: "default" | "primary" | "info" | "warning";
+        [x: string]: any;
     }>;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
     type: {
         type: StringConstructor;
         required: false;
@@ -98,5 +90,5 @@ declare const _sfc_main: import("vue").DefineComponent<{
     danger: boolean;
     loading: boolean;
     square: boolean;
-}>;
+}, {}>;
 export default _sfc_main;

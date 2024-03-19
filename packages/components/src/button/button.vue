@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue"
+import { computed, defineOptions } from "vue"
 import type { CSSProperties } from "vue"
 import "./style/index.less"
 //注意：Vue3.3已经原生支持defineOptions定义组件选项

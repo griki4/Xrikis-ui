@@ -34,19 +34,11 @@ export declare const Button: import("@Xrikis/utils/dist/lib/defineInstall").SFCW
         required: true;
     };
 }, {
-    buttonProps: {
-        type: "default" | "primary" | "info" | "warning";
-        size: "large" | "middle" | "small";
-        onClick: () => void;
-        danger: boolean;
-        loading: boolean;
-        square: boolean;
-        style: import("vue").CSSProperties;
-    };
+    buttonProps: any;
     buttonStyle: import("vue").ComputedRef<{
-        [x: string]: "default" | "primary" | "info" | "warning";
+        [x: string]: any;
     }>;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
     type: {
         type: StringConstructor;
         required: false;
@@ -88,5 +80,5 @@ export declare const Button: import("@Xrikis/utils/dist/lib/defineInstall").SFCW
     danger: boolean;
     loading: boolean;
     square: boolean;
-}>>;
+}, {}>>;
 export default Button;
