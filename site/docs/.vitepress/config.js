@@ -44,6 +44,10 @@ export default {
                             link: "/components/navbar/index"
                         },
                         {
+                            text: "Icon 图标",
+                            link: "/components/icon/index"
+                        },
+                        {
                             text: "Input 输入框",
                             link: "/components/input/index"
                         }

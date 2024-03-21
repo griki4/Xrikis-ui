@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { CSSProperties } from "vue"
-import { defineOptions } from "vue";
+import { defineOptions } from "vue"
 import "./style/index.less"
 
 defineOptions({

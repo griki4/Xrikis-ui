@@ -68,9 +68,9 @@ import { Input } from "xrikis"
 
 ```vue
 <template>
-  <Input placeholder="请输入密码" size="mini"></Input>
-  <Input placeholder="请输入密码" size="small"></Input>
   <Input placeholder="请输入密码" size="medium"></Input>
+  <Input placeholder="请输入密码" size="small"></Input>
+  <Input placeholder="请输入密码" size="mini"></Input>
 </template>
 
 <script setup lang="ts">

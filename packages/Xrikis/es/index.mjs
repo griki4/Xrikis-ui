@@ -1,16 +1,18 @@
 import * as o from "./src/index.mjs";
-import { Button as f } from "./src/button/index.mjs";
-import { NavBar as s } from "./src/navbar/index.mjs";
-import { Input as i } from "./src/input/index.mjs";
+import { Button as p } from "./src/button/index.mjs";
+import { NavBar as a } from "./src/navbar/index.mjs";
+import { Input as s } from "./src/input/index.mjs";
+import { Icon as c } from "./src/icon/index.mjs";
 const e = {
-  install: (t) => {
-    for (const r in o)
-      t.use(o[r]);
+  install: (r) => {
+    for (const t in o)
+      r.use(o[t]);
   }
 };
 export {
-  f as Button,
-  i as Input,
-  s as NavBar,
+  p as Button,
+  c as Icon,
+  s as Input,
+  a as NavBar,
   e as default
 };
